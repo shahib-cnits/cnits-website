@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <!-- Navbar CSS link -->
+    <link rel="stylesheet" href="./assets/css/navbar.css" />
+    <!-- Navbar CSS link -->
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="./assets/css/ui-design.css" />
+    <!-- CSS Link -->
+
+    <!-- Bootstrap Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Bootstrap Link -->
+
+    <!--Fontawesome Link-->
+    <script src="https://kit.fontawesome.com/5c542a6da6.js" crossorigin="anonymous"></script>
+    <!--Fontawesome Link-->
+
+    <!-- Jquery CDN -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   <!-- Jquery CDN -->
+
+   <!-- CDN Js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <!-- CDN Js -->
+    
+</head>
+<body>
+    <!--Fb Chat Plugin-->
+  <!-- Messenger Chat plugin Code -->
+  <div id="fb-root"></div>
+
+  <!-- Your Chat plugin code -->
+  <div id="fb-customer-chat" class="fb-customerchat"></div>
+
+  <script>
+    var chatbox = document.getElementById("fb-customer-chat");
+    chatbox.setAttribute("page_id", "327323588671794");
+    chatbox.setAttribute("attribution", "biz_inbox");
+  </script>
+
+  <!-- Your SDK code -->
+  <script>
+    window.fbAsyncInit = function () {
+      FB.init({
+        xfbml: true,
+        version: "v17.0",
+      });
+    };
+
+    (function (d, s, id) {
+      var js,
+        fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s);
+      js.id = id;
+      js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
+      fjs.parentNode.insertBefore(js, fjs);
+    })(document, "script", "facebook-jssdk");
+  </script>
+  <!--Fb Chat Plugin-->
+
+
+  <!-- Nav Bar Start -->
+  <header id="navbar">
+    <div class="container">
+      <nav class="nav-bar">
+        <span class="nav-open"><i class="fa-solid fa-bars-staggered"></i></span>
+        <a href="./index.html" class="logo"><img src="./assets/img/cnits-logo-ramadan-2024.svg" alt="cnit-logo" /></a>
+        <ul class="menu-item">
+          <span class="close-btn"><i class="fa-solid fa-xmark"></i></span>
+          <li>
+            <a href="./index.html" class="active">Home</a>
+          </li>
+          <li>
+            <a href="./portfolio-en.html">Portfolio</a>
+          </li>
+          <li id="dropdown_menu">
+            <ul class="main-menu">
+              <li>
+                <a>Career
+                  <span class="drop-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                  <label title="Toggle Drop-down" class="drop-icon" for="sm1"><i
+                      class="fa-solid fa-chevron-down"></i></label>
+                </a>
+                <input type="checkbox" id="sm1" />
+                <ul class="sub-menu">
+                  <li><a href="#">Web Design</a></li>
+                  <li><a href="#">Web Development</a></li>
+                  <li><a href="#">UI/UX Design</a></li>
+                  <li>
+                    <a href="./industrial-traning-en.html">Industrial Training</a>
+                  </li>
+                  <!-- <li>
+                      <a href="#"
+                        >Item 2.2
+                        <span class="drop-icon"
+                          ><i class="fa-solid fa-chevron-down"></i
+                        ></span>
+                        <label
+                          title="Toggle Drop-down"
+                          class="drop-icon"
+                          for="sm2"
+                          ><i class="fa-solid fa-chevron-down"></i
+                        ></label>
+                      </a>
+                      <input type="checkbox" id="sm2" />
+                      <ul class="sub-menu">
+                        <li><a href="#">Item 2.2.1</a></li>
+                        <li><a href="#">Item 2.2.2</a></li>
+                        <li><a href="#">Item 2.2.3</a></li>
+                      </ul>
+                    </li> -->
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="./about-en.html">About Us</a>
+          </li>
+          <li>
+            <a href="./contact-en.html">Contact Us</a>
+          </li>
+
+          <a class="course-btn translate_btn" href="./index-bn.html">বাংলা</a>
+        </ul>
+
+        <a class="course-btn" href="./index-bn.html">বাংলা</a>
+      </nav>
+    </div>
+  </header>
+  <!-- Nav Bar End -->
+
+
+
+<!--Hero section Start-->
+<section id="hero">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="hero-content">
+          <div class="hero-title-img">
+            <img src="./assets/img/ui-img/hero-title.svg" alt="">
+          </div>
+          <div class="hero-content-text">
+            <p>
+              It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution.
+            </p>
+          </div>
+          <p class="ui-price">Tk 6,600</p>
+          <button><span style="padding-right: 10px;">Get Admitted</span>
+            <svg width="10" height="20" viewBox="0 0 10 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.28713 19.8187L1.39656 19.7063L9.55185 11.2062C9.82804 10.9187 10 10.4875 10 10.0062C10 9.525 9.82282 9.09375 9.55185 8.80625L1.41219 0.3125L1.27671 0.168751C1.14643 0.0625007 0.990098 -4.32786e-08 0.823345 -3.59896e-08C0.369984 -1.61725e-08 -8.54011e-07 0.4625 -8.28877e-07 1.0375L-4.53506e-08 18.9625C-2.02165e-08 19.5375 0.369985 20 0.823346 20C0.99531 20 1.15685 19.9312 1.28713 19.8187Z" fill="white"/>
+            </svg>
+            </button>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="hero-img">
+          <img src="./assets/img/ui-img/hero-img.svg" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="course-ditails">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="course-start">
+            <p>
+              <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="25" cy="25" r="25" fill="#FFCECE" fill-opacity="0.6"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 14.8226V36.1935C12 36.6391 12.4068 37 12.9091 37H37.4545C37.9568 37 38.3636 36.6391 38.3636 36.1935V14.8226C38.3636 14.377 37.9568 14.0161 37.4545 14.0161H35.1818V12.8065C35.1818 12.3613 34.7745 12 34.2727 12C33.7709 12 33.3636 12.3613 33.3636 12.8065V14.0161H30.6364V12.8065C30.6364 12.3613 30.2291 12 29.7273 12C29.2255 12 28.8182 12.3613 28.8182 12.8065V14.0161H26.0909V12.8065C26.0909 12.3613 25.6836 12 25.1818 12C24.68 12 24.2727 12.3613 24.2727 12.8065V14.0161H21.5455V12.8065C21.5455 12.3613 21.1382 12 20.6364 12C20.1345 12 19.7273 12.3613 19.7273 12.8065V14.0161H17V12.8065C17 12.3613 16.5927 12 16.0909 12C15.5891 12 15.1818 12.3613 15.1818 12.8065V14.0161H12.9091C12.4068 14.0161 12 14.377 12 14.8226ZM36.5455 19.6613H13.8182V35.3871H36.5455V19.6613ZM36.5455 18.0484V15.629H35.1818V16.4355C35.1818 16.8806 34.7745 17.2419 34.2727 17.2419C33.7709 17.2419 33.3636 16.8806 33.3636 16.4355V15.629H30.6364V16.4355C30.6364 16.8806 30.2291 17.2419 29.7273 17.2419C29.2255 17.2419 28.8182 16.8806 28.8182 16.4355V15.629H26.0909V16.4355C26.0909 16.8806 25.6836 17.2419 25.1818 17.2419C24.68 17.2419 24.2727 16.8806 24.2727 16.4355V15.629H21.5455V16.4355C21.5455 16.8806 21.1382 17.2419 20.6364 17.2419C20.1345 17.2419 19.7273 16.8806 19.7273 16.4355V15.629H17V16.4355C17 16.8806 16.5927 17.2419 16.0909 17.2419C15.5891 17.2419 15.1818 16.8806 15.1818 16.4355V15.629H13.8182V18.0484H36.5455Z" fill="#DD0000"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M17 25.182H19.7273C20.2291 25.182 20.6364 24.7747 20.6364 24.2729C20.6364 23.771 20.2291 23.3638 19.7273 23.3638H17C16.4982 23.3638 16.0909 23.771 16.0909 24.2729C16.0909 24.7747 16.4982 25.182 17 25.182Z" fill="#DD0000"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M17 28.8182H19.7273C20.2291 28.8182 20.6364 28.4109 20.6364 27.9091C20.6364 27.4073 20.2291 27 19.7273 27H17C16.4982 27 16.0909 27.4073 16.0909 27.9091C16.0909 28.4109 16.4982 28.8182 17 28.8182Z" fill="#DD0000"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M17 32.4544H19.7273C20.2291 32.4544 20.6364 32.0471 20.6364 31.5453C20.6364 31.0435 20.2291 30.6362 19.7273 30.6362H17C16.4982 30.6362 16.0909 31.0435 16.0909 31.5453C16.0909 32.0471 16.4982 32.4544 17 32.4544Z" fill="#DD0000"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M23.8181 25.182H26.5454C27.0472 25.182 27.4545 24.7747 27.4545 24.2729C27.4545 23.771 27.0472 23.3638 26.5454 23.3638H23.8181C23.3163 23.3638 22.9091 23.771 22.9091 24.2729C22.9091 24.7747 23.3163 25.182 23.8181 25.182Z" fill="#DD0000"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M23.8181 28.8182H26.5454C27.0472 28.8182 27.4545 28.4109 27.4545 27.9091C27.4545 27.4073 27.0472 27 26.5454 27H23.8181C23.3163 27 22.9091 27.4073 22.9091 27.9091C22.9091 28.4109 23.3163 28.8182 23.8181 28.8182Z" fill="#DD0000"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M23.8181 32.4544H26.5454C27.0472 32.4544 27.4545 32.0471 27.4545 31.5453C27.4545 31.0435 27.0472 30.6362 26.5454 30.6362H23.8181C23.3163 30.6362 22.9091 31.0435 22.9091 31.5453C22.9091 32.0471 23.3163 32.4544 23.8181 32.4544Z" fill="#DD0000"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M30.6364 25.182H33.3637C33.8655 25.182 34.2727 24.7747 34.2727 24.2729C34.2727 23.771 33.8655 23.3638 33.3637 23.3638H30.6364C30.1346 23.3638 29.7273 23.771 29.7273 24.2729C29.7273 24.7747 30.1346 25.182 30.6364 25.182Z" fill="#DD0000"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M30.6364 28.8182H33.3637C33.8655 28.8182 34.2727 28.4109 34.2727 27.9091C34.2727 27.4073 33.8655 27 33.3637 27H30.6364C30.1346 27 29.7273 27.4073 29.7273 27.9091C29.7273 28.4109 30.1346 28.8182 30.6364 28.8182Z" fill="#DD0000"/>
+              </svg>
+              <span>Course Start</span>
+            </p>
+            <p class="course-day">Wednesday, 15 November</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="course-class-day">
+            <p>
+              <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="25" cy="25" r="25" fill="#FFCECE" fill-opacity="0.6"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 14.8226V36.1935C12 36.6391 12.4068 37 12.9091 37H37.4545C37.9568 37 38.3636 36.6391 38.3636 36.1935V14.8226C38.3636 14.377 37.9568 14.0161 37.4545 14.0161H35.1818V12.8065C35.1818 12.3613 34.7745 12 34.2727 12C33.7709 12 33.3636 12.3613 33.3636 12.8065V14.0161H30.6364V12.8065C30.6364 12.3613 30.2291 12 29.7273 12C29.2255 12 28.8182 12.3613 28.8182 12.8065V14.0161H26.0909V12.8065C26.0909 12.3613 25.6836 12 25.1818 12C24.68 12 24.2727 12.3613 24.2727 12.8065V14.0161H21.5455V12.8065C21.5455 12.3613 21.1382 12 20.6364 12C20.1345 12 19.7273 12.3613 19.7273 12.8065V14.0161H17V12.8065C17 12.3613 16.5927 12 16.0909 12C15.5891 12 15.1818 12.3613 15.1818 12.8065V14.0161H12.9091C12.4068 14.0161 12 14.377 12 14.8226ZM36.5455 19.6613H13.8182V35.3871H36.5455V19.6613ZM36.5455 18.0484V15.629H35.1818V16.4355C35.1818 16.8806 34.7745 17.2419 34.2727 17.2419C33.7709 17.2419 33.3636 16.8806 33.3636 16.4355V15.629H30.6364V16.4355C30.6364 16.8806 30.2291 17.2419 29.7273 17.2419C29.2255 17.2419 28.8182 16.8806 28.8182 16.4355V15.629H26.0909V16.4355C26.0909 16.8806 25.6836 17.2419 25.1818 17.2419C24.68 17.2419 24.2727 16.8806 24.2727 16.4355V15.629H21.5455V16.4355C21.5455 16.8806 21.1382 17.2419 20.6364 17.2419C20.1345 17.2419 19.7273 16.8806 19.7273 16.4355V15.629H17V16.4355C17 16.8806 16.5927 17.2419 16.0909 17.2419C15.5891 17.2419 15.1818 16.8806 15.1818 16.4355V15.629H13.8182V18.0484H36.5455Z" fill="#DD0000"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M17 25.182H19.7273C20.2291 25.182 20.6364 24.7747 20.6364 24.2729C20.6364 23.771 20.2291 23.3638 19.7273 23.3638H17C16.4982 23.3638 16.0909 23.771 16.0909 24.2729C16.0909 24.7747 16.4982 25.182 17 25.182Z" fill="#DD0000"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M17 28.8182H19.7273C20.2291 28.8182 20.6364 28.4109 20.6364 27.9091C20.6364 27.4073 20.2291 27 19.7273 27H17C16.4982 27 16.0909 27.4073 16.0909 27.9091C16.0909 28.4109 16.4982 28.8182 17 28.8182Z" fill="#DD0000"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M17 32.4544H19.7273C20.2291 32.4544 20.6364 32.0471 20.6364 31.5453C20.6364 31.0435 20.2291 30.6362 19.7273 30.6362H17C16.4982 30.6362 16.0909 31.0435 16.0909 31.5453C16.0909 32.0471 16.4982 32.4544 17 32.4544Z" fill="#DD0000"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M23.8181 25.182H26.5454C27.0472 25.182 27.4545 24.7747 27.4545 24.2729C27.4545 23.771 27.0472 23.3638 26.5454 23.3638H23.8181C23.3163 23.3638 22.9091 23.771 22.9091 24.2729C22.9091 24.7747 23.3163 25.182 23.8181 25.182Z" fill="#DD0000"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M23.8181 28.8182H26.5454C27.0472 28.8182 27.4545 28.4109 27.4545 27.9091C27.4545 27.4073 27.0472 27 26.5454 27H23.8181C23.3163 27 22.9091 27.4073 22.9091 27.9091C22.9091 28.4109 23.3163 28.8182 23.8181 28.8182Z" fill="#DD0000"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M23.8181 32.4544H26.5454C27.0472 32.4544 27.4545 32.0471 27.4545 31.5453C27.4545 31.0435 27.0472 30.6362 26.5454 30.6362H23.8181C23.3163 30.6362 22.9091 31.0435 22.9091 31.5453C22.9091 32.0471 23.3163 32.4544 23.8181 32.4544Z" fill="#DD0000"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M30.6364 25.182H33.3637C33.8655 25.182 34.2727 24.7747 34.2727 24.2729C34.2727 23.771 33.8655 23.3638 33.3637 23.3638H30.6364C30.1346 23.3638 29.7273 23.771 29.7273 24.2729C29.7273 24.7747 30.1346 25.182 30.6364 25.182Z" fill="#DD0000"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M30.6364 28.8182H33.3637C33.8655 28.8182 34.2727 28.4109 34.2727 27.9091C34.2727 27.4073 33.8655 27 33.3637 27H30.6364C30.1346 27 29.7273 27.4073 29.7273 27.9091C29.7273 28.4109 30.1346 28.8182 30.6364 28.8182Z" fill="#DD0000"/>
+              </svg>
+              <span>Class Day</span>
+            </p>
+            <p class="course-day">Sunday and Tuesday</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="course-time">
+            <p><svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="25" cy="25" r="25" fill="#FFCECE" fill-opacity="0.6"/>
+              <path d="M38 24.4964C38.0005 26.9693 37.2677 29.3867 35.8942 31.443C34.5207 33.4992 32.5683 35.1019 30.2839 36.0483C27.9995 36.9946 25.4858 37.2422 23.0607 36.7597C20.6356 36.2771 18.4081 35.0861 16.66 33.3373C15.4957 32.1789 14.5727 30.801 13.9445 29.2835C13.3162 27.766 12.9952 26.1389 13.0001 24.4964H14.6847C14.6847 30.4603 19.5366 35.3127 25.5 35.3127C31.4634 35.3127 36.3153 30.4603 36.3153 24.4964C36.3153 18.5325 31.4634 13.6802 25.5 13.6802C24.0302 13.6802 22.5758 13.9802 21.226 14.5619C19.8761 15.1437 18.6592 15.9949 17.6498 17.0634H20.9392V18.7482H15.0271V12.84H16.7123V15.6162C18.4648 13.881 20.6915 12.7032 23.112 12.2311C25.5325 11.759 28.0385 12.0137 30.3146 12.9632C32.5906 13.9126 34.5348 15.5144 35.9024 17.5667C37.27 19.619 37.9999 22.0301 38 24.4964ZM25.1622 17.908V25.8479H32.0879V24.1586H26.8514V17.908H25.1622Z" fill="#DD0000"/>
+              </svg>
+              <span>Time</span>
+            </p>
+            <p class="course-day">4:00 pm - 6:00 pm</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+  <!-- Footer Section Start -->
+  <section class="footer" id="footer-contact" style="background-image: url(./assets/img/footer-section-bg.png)">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="row align-items-center pt-5">
+            <div class="col-lg-6">
+              <div class="footer-contact-items">
+                <div class="foot-contact-item-1">
+                  <div class="item-1-icon">
+                    <img src="./assets/icons/footer-address.png" alt="" />
+                  </div>
+                  <div class="item-1-text">
+                    <h4>
+                      Hazi Akbar Ali Super Market (4th Floor), Abdul Hamid
+                      Road, Pabna
+                    </h4>
+                  </div>
+                </div>
+                <div class="foot-contact-item-1">
+                  <div class="item-1-icon">
+                    <img src="./assets/icons/footer-phn-2.png" alt="" />
+                  </div>
+                  <div class="item-1-text">
+                    <h4><a href="tel:01788428280">+880 01788 428 280</a></h4>
+                    <h4><a href="tel:01313793313">+880 01300 793 313</a></h4>
+                  </div>
+                </div>
+                <div class="foot-contact-item-1">
+                  <div class="item-1-icon">
+                    <img src="./assets/icons/footer-mail-3.png" alt="" />
+                  </div>
+                  <div class="item-1-text">
+                    <h4>
+                      <a href="mailto: codenextit@gmail.com">codenextit@gmail.com</a>
+                    </h4>
+                    <h4>
+                      <a href="mailto: info@codenextit.com">info@codenextit.com</a>
+                    </h4>
+                  </div>
+                </div>
+              </div>
+              <div class="footer-items-divider">
+                <img src="./assets/img/vertical-line.png" alt="" />
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="footer-map">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d455.5857040294874!2d89.23739731236037!3d24.006875784846272!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fe9b5b4a35c9e7%3A0xcb692fab6b815d87!2sCodeNext%20IT%20Solution!5e0!3m2!1sen!2sbd!4v1662076883379!5m2!1sen!2sbd"
+                  width="100%" height="400" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Footer Section End -->
+
+  <!-- Copyright Footer Section Start -->
+  <section class="copyright">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-12">
+          <div class="copyright-title">
+            <p>Copyright 2023 - 2024 © <b>CODE NEXT IT SOLUTION</b></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="back-to-top">
+      <a class="back-top-icon" href="#top" id="bt-top">
+        <img src="./assets/icons/back-top-ico.png" alt="" />
+      </a>
+    </div>
+  </section>
+  <!-- Copyright Footer Section Start -->
+
+  <!-- cursor -->
+  <div class="circle"></div>
+  <div class="circle-follow"></div>
+  <!-- cursor -->
+
+
+  <!-- Custom Js -->
+  <script src="./assets/js/all.js"></script>
+  <!-- Custom Js -->
+
+
+  <!-- GSAP CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+    integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+   crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <!--GSAP CDN-->
+
+
+
+  <script>
+    // cursor
+    var $circle = $(".circle"),
+      $follow = $(".circle-follow");
+
+    function moveCircle(e) {
+      TweenLite.to($circle, 0.3, {
+        x: e.clientX,
+        y: e.clientY,
+      });
+      TweenLite.to($follow, 0.7, {
+        x: e.clientX,
+        y: e.clientY,
+      });
+    }
+
+    $(window).on("mousemove", moveCircle);
+  </script>
+    
+</body>
+</html>
