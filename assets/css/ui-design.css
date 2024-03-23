@@ -183,9 +183,6 @@ a {
 .figma-img img{
     width: 50px;
     aspect-ratio: 1/1;
-    
-    
-    
 
 }
 .figma-img{
@@ -200,6 +197,12 @@ a {
     font-size: 17px;
     font-weight: 700;
     padding-top: 20px;
+}
+@media screen and (max-width: 575px) {
+    .taught-h2{
+        font-size: 35px;
+    }
+    
 }
 /*Taught in the Course End*/
 
@@ -294,6 +297,12 @@ a {
     }
     
 }
+@media screen and (max-width: 575px) {
+    .course-title{
+        font-size: 35px;
+    }
+    
+}
 /* Course Features End*/
 
 
@@ -372,7 +381,7 @@ a {
 }
 @media screen and (max-width: 575px) {
     .who-course-for-heading h2{
-        font-size: 27px;
+        font-size: 35px;
     }
     
 }
@@ -504,6 +513,12 @@ a {
     }
     
 }
+@media screen and (max-width: 575px) {
+    .course-module-heading h2{
+        font-size: 35px;
+    }
+    
+}
 /*Course Module End*/
 
 
@@ -586,6 +601,12 @@ a {
     }
     .instructor-card{
         margin-top: 100px;
+    }
+    
+}
+@media screen and (max-width: 575px) {
+    .instuctor-heading h2{
+        font-size: 35px;
     }
     
 }
@@ -826,6 +847,16 @@ a {
 .more-course-card-ditails button svg{
     width: 15px;
     height: 15px;
+}
+@media screen and (max-width: 575px) {
+    .more-course-heading h2{
+        font-size: 30px;
+    }
+    .more-course-heading h2::after{
+        width: 50%;
+
+    }
+    
 }
 /*More course end*/
 

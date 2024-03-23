@@ -210,7 +210,7 @@ a {
 }
 @media screen and (max-width: 575px) {
     .taught-h2{
-        font-size: 30px;
+        font-size: 35px;
     }
     .taught-course-items{
         flex-direction: column;
@@ -314,6 +314,12 @@ a {
     }
     
 }
+@media screen and (max-width: 575px) {
+    .course-features-heading h2{
+        font-size: 35px;
+    }
+    
+}
 /* Course Features End*/
 
 
@@ -392,7 +398,7 @@ a {
 }
 @media screen and (max-width: 575px) {
     .who-course-for-heading h2{
-        font-size: 27px;
+        font-size: 35px;
     }
     
 }
@@ -519,8 +525,14 @@ a {
 }
 @media screen and (max-width: 991px) {
     .course-module-content{
-        padding: 100px 0px;
+        padding: 50px 0px;
         padding-bottom: 50px;
+    }
+    
+}
+@media screen and (max-width: 575px) {
+    .course-module-heading h2{
+        font-size: 35px;
     }
     
 }
@@ -846,6 +858,16 @@ a {
 .more-course-card-ditails button svg{
     width: 15px;
     height: 15px;
+}
+@media screen and (max-width: 575px) {
+    .more-course-heading h2{
+        font-size: 30px;
+    }
+    .more-course-heading h2::after{
+        width: 50%;
+
+    }
+    
 }
 /*More course end*/
 
