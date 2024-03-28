@@ -204,7 +204,7 @@ a {
   top: 0;
   left: 0;
   z-index: -9;
-  animation: bouncing 2s linear infinite;
+  animation: bounce 2s linear infinite;
 }
 
 .course-btn::after {
@@ -220,7 +220,7 @@ a {
   z-index:-1;
 }
 
-@keyframes bouncing {
+@keyframes bounce {
   0% {
     transform: scale(1);
     opacity: 1;

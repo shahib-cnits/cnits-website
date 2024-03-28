@@ -544,6 +544,7 @@ a {
 .instuctor-heading{
     text-align: center;
     padding-top: 50px;
+    margin-bottom: 100px;
 }
 .instuctor-heading h2{
     text-align: center;
@@ -552,6 +553,7 @@ a {
     font-weight: 600;
     display: inline;
     position: relative;
+    
 
 }
 .instuctor-heading h2::after{
@@ -567,17 +569,19 @@ a {
     background-image: linear-gradient(to bottom right, red, rgb(230, 161, 161));
 
 }
-.instructors-cards{
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 100px;
-    padding-top: 100px;
-    
-}
+/* .instructor-cards{
+    margin-top: 100px;
+} */
+
 .instructor-card{
     position: relative;
+    
+}
+.instructor-img{
+    width: 100%;
+}
+.instructor-img img{
+    width: 100%;
 }
 .instructor-ditails{
     background-color: #ffffff;
@@ -597,7 +601,7 @@ a {
 
 }
 .instructor-ditails p{
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
     padding-top: 10px;
 
@@ -614,11 +618,46 @@ a {
 }
 @media screen and (max-width:991px) {
     .instructors-cards{
-        flex-direction: column;
+        /* flex-direction: column; */
     }
     .instructor-card{
         margin-top: 100px;
     }
+    .instructor-ditails{
+        padding: 20px 20px;
+    }
+    .instructor-ditails h4{
+        font-size: 22px;
+    }
+    .instructor-ditails p{
+        font-size: 17px;
+        margin-bottom: 0px;
+    }
+    .instructor-ditails button{
+        font-size: 16px;
+    }
+    
+}
+@media screen and (max-width: 775px) {
+    .instructors-cards{
+        flex-direction: column;
+    }
+    .instructor-ditails{
+        padding: 40px 30px;
+    }
+    .instructor-card{
+        margin-bottom: 50px;
+    }
+}
+@media screen and (max-width: 575px) {
+    
+    .instructor-ditails h4{
+        font-size: 20px;
+    }
+    .instructor-ditails{
+        padding: 30px 20px;
+    }
+    
     
 }
 /*Insructors End*/
@@ -859,6 +898,12 @@ a {
     width: 15px;
     height: 15px;
 }
+@media screen and (max-width: 991px) {
+    .more-course-card{
+        margin-bottom: 30px;
+    }
+    
+}
 @media screen and (max-width: 575px) {
     .more-course-heading h2{
         font-size: 30px;
@@ -866,6 +911,9 @@ a {
     .more-course-heading h2::after{
         width: 50%;
 
+    }
+    .more-course-card{
+        margin-bottom: 30px;
     }
     
 }

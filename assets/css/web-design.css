@@ -569,6 +569,9 @@ a {
     padding-top: 100px;
     
 } */
+.instructors-cards{
+    margin-top: 100px;
+}
 .instructor-card{
     width: 100%;
     position: relative;
@@ -587,7 +590,8 @@ a {
     position: absolute;
     bottom: -130px;
     left: 0;
-    padding: 40px 35px;
+    padding: 40px 30px;
+    padding-bottom: 20px;
     text-align: center;
     border: 1px solid rgb(245, 245, 245);
     border-radius: 25px;
@@ -599,17 +603,18 @@ a {
 
 }
 .instructor-ditails p{
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
     padding-top: 10px;
+    margin-bottom: 5px;
 
 }
 .instructor-ditails button{
-    font-size: 20px;
+    font-size: 17px;
     font-weight: 600;
     color: #fff;
     padding: 5px 25px;
-    margin-top: 20px;
+    margin-top: 10px;
     border: none;
     border-radius: 50px;
     background-image: linear-gradient(to bottom right, #DD0606, #FF9696);
@@ -619,13 +624,35 @@ a {
         flex-direction: column;
     }
     .instructor-card{
-        width: 70%;
+        width: 100%;
         margin: auto;
-        margin-top: 200px;
+        margin: 100px 0px 130px 0px;
     }
     .ins-img img{
         min-width: 100%;
     }
+    .instructor-ditails p{
+        font-size: 15px;
+        margin-bottom: 0px;
+    }
+    .instructor-ditails button{
+        font-size: 18px;
+        margin-top: 20px;
+        
+    }
+    
+
+    
+     /*
+    .instructor-ditails{
+        padding: 20px 20px;
+    }
+    .instructor-ditails h4{
+        font-size: 20px;
+        font-weight: 600;
+    }
+    
+     */
     
 }
 @media screen and (max-width: 575px) {

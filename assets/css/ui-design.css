@@ -561,6 +561,13 @@ a {
 }
 .instructor-card{
     position: relative;
+    
+}
+.instructor-img{
+    width: 100%;
+}
+.instructor-img img{
+    width: 100%;
 }
 .instructor-ditails{
     background-color: #ffffff;
@@ -597,17 +604,43 @@ a {
 }
 @media screen and (max-width:991px) {
     .instructors-cards{
-        flex-direction: column;
+        /* flex-direction: column; */
     }
     .instructor-card{
         margin-top: 100px;
     }
+    .instructor-ditails{
+        padding: 20px 20px;
+    }
+    .instructor-ditails h4{
+        font-size: 22px;
+    }
+    .instructor-ditails p{
+        font-size: 17px;
+        margin-bottom: 0px;
+    }
+    .instructor-ditails button{
+        font-size: 16px;
+    }
+    
+}
+@media screen and (max-width: 775px) {
+    .instructors-cards{
+        flex-direction: column;
+    }
+    .instructor-ditails{
+        padding: 40px 30px;
+    }
     
 }
 @media screen and (max-width: 575px) {
-    .instuctor-heading h2{
-        font-size: 35px;
+    .instructor-ditails h4{
+        font-size: 20px;
     }
+    .instructor-ditails{
+        padding: 30px 20px;
+    }
+    
     
 }
 /*Insructors End*/
