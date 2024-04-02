@@ -126,6 +126,15 @@ a {
     }
     
 }
+@media screen and (max-width: 775px) {
+    .course-time{
+        padding-top: 30px;
+    }
+    .course-class-day{
+        padding-top: 30px;
+    }
+    
+}
 @media screen and (max-width: 991px) {
     #hero{
         padding-top: 100px;
@@ -137,12 +146,7 @@ a {
     .hero-img img{
         margin: 20px;
     }
-    .course-time{
-        padding-top: 30px;
-    }
-    .course-class-day{
-        padding-top: 30px;
-    }
+    
     
     
 }
@@ -627,6 +631,7 @@ a {
 @media screen and (max-width: 775px) {
     .instructors-cards{
         flex-direction: column;
+        padding-top: 0px;
     }
     .instructor-ditails{
         padding: 40px 30px;
@@ -888,6 +893,13 @@ a {
     .more-course-heading h2::after{
         width: 50%;
 
+    }
+    
+}
+
+@media screen and (max-width: 991px) {
+    .more-course-card{
+        margin-top: 30px;
     }
     
 }

@@ -75,8 +75,8 @@ a {
     align-items: center;
 }
 .hero-img img{
-    width: 100%;
-    aspect-ratio: 5/3;
+    width: 90%;
+    
 }
 .course-ditails{
     margin-top: 50px;
@@ -126,6 +126,15 @@ a {
     }
     
 }
+@media screen and (max-width: 776px) {
+    .course-time{
+        padding-top: 30px;
+    }
+    .course-class-day{
+        padding-top: 30px;
+    }
+    
+}
 @media screen and (max-width: 991px) {
     #hero{
         padding-top: 100px;
@@ -137,12 +146,7 @@ a {
     .hero-img img{
         margin: 20px;
     }
-    .course-time{
-        padding-top: 30px;
-    }
-    .course-class-day{
-        padding-top: 30px;
-    }
+    
     
     
 }
@@ -171,17 +175,18 @@ a {
     margin-top: 30px;
     background-image: linear-gradient(to bottom right, red, rgb(230, 161, 161));
 }
-.taught-course-items{
+/* .taught-course-content{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
     width: 100%;
     margin-top: 60px;
-}
-/* .figma{
-    width: 25%;
 } */
+.taught-course-item{
+    display: inline-block !important;
+    margin-left: 50px;
+}
 .js-img{
     margin-left: 10px;
 }
@@ -191,18 +196,18 @@ a {
     object-fit: contain;
     object-position: center;
 }
-.figma-img img{
+.taught-course-item-img img{
     width: 50px;
     aspect-ratio: 1/1;
 }
-.figma-img{
+.taught-course-item-img{
     padding: 17px;
     border: none;
     border-radius: 50%;
     background-color: #FFD8D8;
     
 }
-.figma h5{
+.taught-course-item h5{
     text-align: center;
     font-size: 17px;
     font-weight: 700;
@@ -336,16 +341,13 @@ a {
     position: relative;
 
 }
-.who-course-for-heading h2::after{
-    content: "";
-    position: absolute;
-    left: 30%;
-    /* right: 20% !important; */
-    bottom: -30px;
-    width: 45%;
+.who-course-divider{
+    max-width: 200px;
     height: 5px;
+    margin: auto;
     border: none;
     border-radius: 5px;
+    margin-top: 30px;
     background-image: linear-gradient(to bottom right, red, rgb(230, 161, 161));
 }
 .who-course-for-cards{
