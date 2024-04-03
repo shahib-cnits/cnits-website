@@ -184,6 +184,7 @@ a {
 } */
 .taught-course-item {
     display: inline-block !important;
+    margin: auto;
 }
 .taught-course-item img{
     width: 50px;

@@ -185,7 +185,8 @@ a {
 } */
 .taught-course-item{
     display: inline-block !important;
-    margin-left: 50px;
+    margin: auto;
+    /* margin-left: 50px; */
 }
 .js-img{
     margin-left: 10px;
@@ -591,7 +592,7 @@ a {
     position: absolute;
     bottom: -130px;
     left: 0;
-    padding: 40px 35px;
+    padding: 25px 20px;
     text-align: center;
     border: 1px solid rgb(245, 245, 245);
     border-radius: 25px;
@@ -613,7 +614,7 @@ a {
     font-weight: 600;
     color: #fff;
     padding: 5px 25px;
-    margin-top: 20px;
+    margin-top: 10px;
     border: none;
     border-radius: 50px;
     background-image: linear-gradient(to bottom right, #DD0606, #FF9696);
@@ -626,7 +627,7 @@ a {
         margin-top: 100px;
     }
     .instructor-ditails{
-        padding: 20px 20px;
+        padding: 25px 20px;
     }
     .instructor-ditails h4{
         font-size: 22px;
@@ -670,9 +671,10 @@ a {
 #support {
     background-image: linear-gradient(to left, #FFDCDC, #FFFFFF);
     padding: 100px 0 50px;
-    padding-top: 100px;
+    padding-top: 100px !important;
+    margin-top: 200px;
     padding-bottom: 100px;
-    margin-top: 250px;
+    /* margin-top: 250px; */
 }
 
 .support_image img {
