@@ -920,36 +920,14 @@ a.support-btn {
     bottom: 0;
     right: 0;
 }
-/* .support_btn {
-    margin-top: 50px;
-    display: flex;
-    justify-content: end;
-} */
-/* .more-btn{
-    text-decoration: none;
-    padding: 5px 20px;
-    border: 2px solid red;
-    border-radius: 20px;
-    font-size: 17px;
-    font-weight: 600;
-    color: red;
-    background-color: #fff;
-}
 
-.support_btn .more-btn.active {
-    background-color: var(--header-color);
-    color: #fff;
-}
 
-.support_btn .more-btn.active:hover {
-    background-color: #fff;
-    color: var(--header-color);
+@media screen and (max-width: 1200px) {
+    a.support-btn{
+        font-size: 0.9rem;
+    }
+    
 }
-
-.support_btn .more-btn:last-child:hover {
-    background-color: var(--header-color);
-    color: #fff;
-} */
 
 /* support end */
 

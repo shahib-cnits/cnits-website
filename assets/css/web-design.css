@@ -990,7 +990,12 @@ a.support-btn {
     }
     
 }
-
+@media screen and (max-width: 1200px) {
+    a.support-btn{
+        font-size: 0.9rem;
+    }
+    
+}
 /* support end */
 
 
