@@ -29,8 +29,8 @@ a {
 /*Hero Start*/
 
 #hero{
-    padding-top: 200px;
-    padding-bottom: 100px;
+    padding-top: 150px;
+    padding-bottom: 70px;
     background-image: linear-gradient(to right, #FFFFFF, #FFDCDC);
 }
 .hero-title-img{
@@ -50,13 +50,99 @@ a {
     line-height: 30px;
     text-align: justify;
 }
-.ui-price{
+/* .ui-price{
     padding-left: 50px;
     font-size: 17px;
     font-weight: 600;
 
+} */
+.ui-price{
+    padding-left: 70px;
+    font-size: 17px;
+    font-weight: 600;
+
 }
-.hero-content button{
+a.more-btn {
+    position: relative;
+    padding: 8px 35px;
+    text-align: center;
+    border: 2px solid #dd0000;
+    text-decoration: none;
+    font-family: var(--header-font);
+    color: #dd0000;
+    font-weight: 700;
+    font-size: 1.1em;
+    z-index: 10;
+    transition: 0.5s;
+    overflow: hidden;
+    border-radius: 30px;
+    display: inline-block;
+}
+.more-btn svg{
+    margin-left: 20px;
+}
+.more-btn:hover {
+    color: #fff;
+}
+.more-btn svg path{
+    fill: #dd0000;
+    
+}
+.more-btn:hover svg path{
+    fill: #e7e7e7;
+}
+  
+.more-btn span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #dd0000;
+    transition: 0.4s;
+    z-index: -1;
+    opacity: 0.3;
+}
+  
+  .more-btn span:nth-child(1) {
+    top: -100%;
+    left: -100%;
+  }
+  
+  .more-btn:hover span:nth-child(1) {
+    top: 0;
+    left: 0;
+  }
+  
+  .more-btn span:nth-child(2) {
+    bottom: -100%;
+    left: -100%;
+  }
+  
+  .more-btn:hover span:nth-child(2) {
+    bottom: 0;
+    left: 0;
+  }
+  
+  .more-btn span:nth-child(3) {
+    top: -100%;
+    right: -100%;
+  }
+  
+  .more-btn:hover span:nth-child(3) {
+    top: 0;
+    right: 0;
+  }
+  
+  .more-btn span:nth-child(4) {
+    bottom: -100%;
+    right: -100%;
+  }
+  
+  .more-btn:hover span:nth-child(4) {
+    bottom: 0;
+    right: 0;
+  }
+
+/* .hero-content button{
     padding: 10px 25px;
     border: none;
     border-radius: 30px;
@@ -68,7 +154,7 @@ a {
 .hero-content button svg{
     height: 13px;
     width: 13px;
-}
+} */
 .hero-img{
     display: flex;
     justify-content: right;
@@ -185,7 +271,8 @@ a {
 } */
 .taught-course-item{
     display: inline-block !important;
-    margin-left: 50px;
+    margin: auto;
+    /* margin-left: 50px; */
 }
 .js-img{
     margin-left: 10px;
@@ -233,7 +320,7 @@ a {
 /*Course Features Start*/
 .course-features-heading{
     text-align: center;
-    padding-top: 50px;
+    padding-top: 70px;
     
 }
 .course-title{
@@ -332,6 +419,7 @@ a {
 /*Who Is This Course For Start*/
 .who-course-for-heading{
     text-align: center;
+    padding-top: 50px;
 }
 .who-course-for-heading h2{
     text-align: center;
@@ -351,7 +439,7 @@ a {
     background-image: linear-gradient(to bottom right, red, rgb(230, 161, 161));
 }
 .who-course-for-cards{
-    padding-top: 100px;
+    padding-top: 70px;
 }
 .who-course-for-card{
     width: 100%;
@@ -513,6 +601,96 @@ a {
    z-index: 3;
 
 }
+a.more-4-btn {
+    position: relative;
+    padding: 12px 45px;
+    text-align: center;
+    border: 2px solid #dd0000;
+    text-decoration: none;
+    font-family: var(--header-font);
+    color: #dd0000;
+    font-weight: 700;
+    font-size: 1.1em;
+    z-index: 10;
+    transition: 0.5s;
+    overflow: hidden;
+    border-radius: 50px;
+    display: inline-block;
+}
+  
+.more-4-btn:hover {
+    color: #fff;
+}
+.more-4-btn svg{
+    margin-left: 20px;
+}
+.more-4-btn svg path{
+    fill: #dd0000;
+}
+.more-4-btn:hover svg path{
+    fill: #e7e7e7;
+}
+  
+.more-4-btn span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #dd0000;
+    transition: 0.4s;
+    z-index: -1;
+    opacity: 0.3;
+}
+  
+.more-4-btn span:nth-child(1) {
+    top: -100%;
+    left: -100%;
+}
+  
+.more-4-btn:hover span:nth-child(1) {
+    top: 0;
+    left: 0;
+}
+  
+.more-4-btn span:nth-child(2) {
+    bottom: -100%;
+    left: -100%;
+}
+  
+.more-4-btn:hover span:nth-child(2) {
+    bottom: 0;
+    left: 0;
+}
+  
+.more-4-btn span:nth-child(3) {
+    top: -100%;
+    right: -100%;
+}
+  
+.more-4-btn:hover span:nth-child(3) {
+    top: 0;
+    right: 0;
+}
+  
+.more-4-btn span:nth-child(4) {
+    bottom: -100%;
+    right: -100%;
+}
+  
+.more-4-btn:hover span:nth-child(4) {
+    bottom: 0;
+    right: 0;
+}
+.more-button{
+    text-align: center;
+    margin-top: 70px;
+}
+/* .more-4-btn{
+    position: relative;
+   padding-top: 50px;
+   text-align: center;
+   z-index: 3;
+
+}
 .more-4-btn button{
     font-size: 20px;
     color: #fff;
@@ -524,7 +702,7 @@ a {
 }
 .more-4-btn button span{
     padding-right: 30px;
-}
+} */
 @media screen and (max-width: 991px) {
     .course-module-content{
         padding: 50px 0px;
@@ -591,7 +769,7 @@ a {
     position: absolute;
     bottom: -130px;
     left: 0;
-    padding: 40px 35px;
+    padding: 25px 20px;
     text-align: center;
     border: 1px solid rgb(245, 245, 245);
     border-radius: 25px;
@@ -613,7 +791,7 @@ a {
     font-weight: 600;
     color: #fff;
     padding: 5px 25px;
-    margin-top: 20px;
+    margin-top: 10px;
     border: none;
     border-radius: 50px;
     background-image: linear-gradient(to bottom right, #DD0606, #FF9696);
@@ -626,7 +804,7 @@ a {
         margin-top: 100px;
     }
     .instructor-ditails{
-        padding: 20px 20px;
+        padding: 25px 20px;
     }
     .instructor-ditails h4{
         font-size: 22px;
@@ -670,9 +848,10 @@ a {
 #support {
     background-image: linear-gradient(to left, #FFDCDC, #FFFFFF);
     padding: 100px 0 50px;
-    padding-top: 100px;
+    padding-top: 100px !important;
+    margin-top: 200px;
     padding-bottom: 100px;
-    margin-top: 250px;
+    /* margin-top: 250px; */
 }
 
 .support_image img {
@@ -687,8 +866,91 @@ a {
     font-weight: 600;
     margin-bottom: 0;
 }
-
 .support_btn {
+    margin-top: 50px;
+    display: flex;
+    justify-content: end;
+}
+a.support-btn {
+    position: relative;
+    padding: 10px 35px;
+    text-align: center;
+    border: 2px solid #dd0000;
+    text-decoration: none;
+    font-family: var(--header-font);
+    color: #dd0000;
+    font-weight: 700;
+    font-size: 1em;
+    z-index: 10;
+    transition: 0.5s;
+    overflow: hidden;
+    border-radius: 50px;
+    display: inline-block;
+}
+  
+.support-btn:hover {
+    color: #fff;
+}
+.support-btn svg{
+    margin-left: 20px;
+}
+.support-btn svg path{
+    fill: #dd0000;
+}
+.support-btn:hover svg path{
+    fill: #e7e7e7;
+}
+  
+.support-btn span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #dd0000;
+    transition: 0.4s;
+    z-index: -1;
+    opacity: 0.3;
+}
+  
+.support-btn span:nth-child(1) {
+    top: -100%;
+    left: -100%;
+}
+  
+.support-btn:hover span:nth-child(1) {
+    top: 0;
+    left: 0;
+}
+  
+.support-btn span:nth-child(2) {
+    bottom: -100%;
+    left: -100%;
+}
+  
+.support-btn:hover span:nth-child(2) {
+    bottom: 0;
+    left: 0;
+}
+  
+.support-btn span:nth-child(3) {
+    top: -100%;
+    right: -100%;
+}
+  
+.support-btn:hover span:nth-child(3) {
+    top: 0;
+    right: 0;
+}
+  
+.support-btn span:nth-child(4) {
+    bottom: -100%;
+    right: -100%;
+}
+  
+.support-btn:hover span:nth-child(4) {
+    bottom: 0;
+    right: 0;
+}
+/* .support_btn {
     margin-top: 50px;
     display: flex;
     justify-content: end;
@@ -717,8 +979,13 @@ a {
 .support_btn .more-btn:last-child:hover {
     background-color: var(--header-color);
     color: #fff;
+} */
+@media screen and (max-width: 1200px) {
+    a.support-btn{
+        font-size: 0.9rem;
+    }
+    
 }
-
 /* support end */
 
 
@@ -886,7 +1153,86 @@ a {
     text-align: justify;
     word-spacing: 5px;
 }
-.more-course-card-ditails button{
+a.more-btn {
+    position: relative;
+    padding: 8px 35px;
+    text-align: center;
+    border: 2px solid #dd0000;
+    text-decoration: none;
+    font-family: var(--header-font);
+    color: #dd0000;
+    font-weight: 700;
+    font-size: 1.1em;
+    z-index: 10;
+    transition: 0.5s;
+    overflow: hidden;
+    border-radius: 30px;
+    display: inline-block;
+}
+.more-btn svg{
+    margin-left: 20px;
+}
+.more-btn:hover {
+    color: #fff;
+}
+.more-btn svg path{
+    fill: #dd0000;
+    
+}
+.more-btn:hover svg path{
+    fill: #e7e7e7;
+}
+  
+.more-btn span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #dd0000;
+    transition: 0.4s;
+    z-index: -1;
+    opacity: 0.3;
+}
+  
+  .more-btn span:nth-child(1) {
+    top: -100%;
+    left: -100%;
+  }
+  
+  .more-btn:hover span:nth-child(1) {
+    top: 0;
+    left: 0;
+  }
+  
+  .more-btn span:nth-child(2) {
+    bottom: -100%;
+    left: -100%;
+  }
+  
+  .more-btn:hover span:nth-child(2) {
+    bottom: 0;
+    left: 0;
+  }
+  
+  .more-btn span:nth-child(3) {
+    top: -100%;
+    right: -100%;
+  }
+  
+  .more-btn:hover span:nth-child(3) {
+    top: 0;
+    right: 0;
+  }
+  
+  .more-btn span:nth-child(4) {
+    bottom: -100%;
+    right: -100%;
+  }
+  
+  .more-btn:hover span:nth-child(4) {
+    bottom: 0;
+    right: 0;
+  }
+/* .more-course-card-ditails button{
     padding: 7px 20px;
     margin-top: 20px;
     font-size: 17px;
@@ -899,7 +1245,7 @@ a {
 .more-course-card-ditails button svg{
     width: 15px;
     height: 15px;
-}
+} */
 @media screen and (max-width: 991px) {
     .more-course-card{
         margin-bottom: 30px;

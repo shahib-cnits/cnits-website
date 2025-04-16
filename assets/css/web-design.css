@@ -30,7 +30,7 @@ a {
 
 #hero{
     padding-top: 150px;
-    padding-bottom: 100px;
+    padding-bottom: 70px;
     background-image: linear-gradient(to right, #FFFFFF, #FFDCDC);
 }
 .hero-title-img{
@@ -50,13 +50,12 @@ a {
     line-height: 30px;
     text-align: justify;
 }
-.ui-price{
-    padding-left: 50px;
-    font-size: 17px;
+.web-design-price{
+    padding-left: 70px;
+    font-size: 20px;
     font-weight: 600;
-
 }
-.hero-content button{
+/* .hero-content button{
     padding: 10px 25px;
     border: none;
     border-radius: 30px;
@@ -68,7 +67,86 @@ a {
 .hero-content button svg{
     height: 13px;
     width: 13px;
+} */
+a.more-btn {
+    position: relative;
+    padding: 8px 35px;
+    text-align: center;
+    border: 2px solid #dd0000;
+    text-decoration: none;
+    font-family: var(--header-font);
+    color: #dd0000;
+    font-weight: 700;
+    font-size: 1.1em;
+    z-index: 10;
+    transition: 0.5s;
+    overflow: hidden;
+    border-radius: 30px;
+    display: inline-block;
 }
+.more-btn svg{
+    margin-left: 20px;
+}
+.more-btn:hover {
+    color: #fff;
+}
+.more-btn svg path{
+    fill: #dd0000;
+    
+}
+.more-btn:hover svg path{
+    fill: #e7e7e7;
+}
+  
+.more-btn span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #dd0000;
+    transition: 0.4s;
+    z-index: -1;
+    opacity: 0.3;
+}
+  
+  .more-btn span:nth-child(1) {
+    top: -100%;
+    left: -100%;
+  }
+  
+  .more-btn:hover span:nth-child(1) {
+    top: 0;
+    left: 0;
+  }
+  
+  .more-btn span:nth-child(2) {
+    bottom: -100%;
+    left: -100%;
+  }
+  
+  .more-btn:hover span:nth-child(2) {
+    bottom: 0;
+    left: 0;
+  }
+  
+  .more-btn span:nth-child(3) {
+    top: -100%;
+    right: -100%;
+  }
+  
+  .more-btn:hover span:nth-child(3) {
+    top: 0;
+    right: 0;
+  }
+  
+  .more-btn span:nth-child(4) {
+    bottom: -100%;
+    right: -100%;
+  }
+  
+  .more-btn:hover span:nth-child(4) {
+    bottom: 0;
+    right: 0;
+  }
 .hero-img{
     display: flex;
     justify-content: right;
@@ -184,6 +262,7 @@ a {
 } */
 .taught-course-item {
     display: inline-block !important;
+    margin: auto;
 }
 .taught-course-item img{
     width: 50px;
@@ -324,6 +403,7 @@ a {
 /*Who Is This Course For Start*/
 .who-course-for-heading{
     text-align: center;
+    padding-top: 50px;
 }
 .who-course-for-heading h2{
     text-align: center;
@@ -343,7 +423,7 @@ a {
     background-image: linear-gradient(to bottom right, red, rgb(230, 161, 161));
 }
 .who-course-for-cards{
-    padding-top: 100px;
+    padding-top: 70px;
 }
 .who-course-for-card{
     width: 100%;
@@ -510,7 +590,7 @@ a {
    z-index: 3;
 
 }
-.more-4-btn button{
+/* .more-4-btn button{
     font-size: 20px;
     color: #fff;
     font-weight: 500;
@@ -521,6 +601,89 @@ a {
 }
 .more-4-btn button span{
     padding-right: 30px;
+} */
+a.more-4-btn {
+    position: relative;
+    padding: 12px 45px;
+    text-align: center;
+    border: 2px solid #dd0000;
+    text-decoration: none;
+    font-family: var(--header-font);
+    color: #dd0000;
+    font-weight: 700;
+    font-size: 1.1em;
+    z-index: 10;
+    transition: 0.5s;
+    overflow: hidden;
+    border-radius: 50px;
+    display: inline-block;
+}
+  
+.more-4-btn:hover {
+    color: #fff;
+}
+.more-4-btn svg{
+    margin-left: 20px;
+}
+.more-4-btn svg path{
+    fill: #dd0000;
+}
+.more-4-btn:hover svg path{
+    fill: #e7e7e7;
+}
+  
+.more-4-btn span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #dd0000;
+    transition: 0.4s;
+    z-index: -1;
+    opacity: 0.3;
+}
+  
+.more-4-btn span:nth-child(1) {
+    top: -100%;
+    left: -100%;
+}
+  
+.more-4-btn:hover span:nth-child(1) {
+    top: 0;
+    left: 0;
+}
+  
+.more-4-btn span:nth-child(2) {
+    bottom: -100%;
+    left: -100%;
+}
+  
+.more-4-btn:hover span:nth-child(2) {
+    bottom: 0;
+    left: 0;
+}
+  
+.more-4-btn span:nth-child(3) {
+    top: -100%;
+    right: -100%;
+}
+  
+.more-4-btn:hover span:nth-child(3) {
+    top: 0;
+    right: 0;
+}
+  
+.more-4-btn span:nth-child(4) {
+    bottom: -100%;
+    right: -100%;
+}
+  
+.more-4-btn:hover span:nth-child(4) {
+    bottom: 0;
+    right: 0;
+}
+.more-button{
+    text-align: center;
+    margin-top: 70px;
 }
 @media screen and (max-width: 991px) {
     .course-module-content{
@@ -689,7 +852,7 @@ a {
     padding: 100px 0 50px;
     padding-top: 100px;
     padding-bottom: 100px;
-    margin-top: 100px;
+    margin-top: 250px;
 }
 
 .support_image img {
@@ -710,7 +873,86 @@ a {
     display: flex;
     justify-content: end;
 }
-.more-btn{
+a.support-btn {
+    position: relative;
+    padding: 10px 35px;
+    text-align: center;
+    border: 2px solid #dd0000;
+    text-decoration: none;
+    font-family: var(--header-font);
+    color: #dd0000;
+    font-weight: 700;
+    font-size: 1em;
+    z-index: 10;
+    transition: 0.5s;
+    overflow: hidden;
+    border-radius: 50px;
+    display: inline-block;
+}
+  
+.support-btn:hover {
+    color: #fff;
+}
+.support-btn svg{
+    margin-left: 20px;
+}
+.support-btn svg path{
+    fill: #dd0000;
+}
+.support-btn:hover svg path{
+    fill: #e7e7e7;
+}
+  
+.support-btn span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #dd0000;
+    transition: 0.4s;
+    z-index: -1;
+    opacity: 0.3;
+}
+  
+.support-btn span:nth-child(1) {
+    top: -100%;
+    left: -100%;
+}
+  
+.support-btn:hover span:nth-child(1) {
+    top: 0;
+    left: 0;
+}
+  
+.support-btn span:nth-child(2) {
+    bottom: -100%;
+    left: -100%;
+}
+  
+.support-btn:hover span:nth-child(2) {
+    bottom: 0;
+    left: 0;
+}
+  
+.support-btn span:nth-child(3) {
+    top: -100%;
+    right: -100%;
+}
+  
+.support-btn:hover span:nth-child(3) {
+    top: 0;
+    right: 0;
+}
+  
+.support-btn span:nth-child(4) {
+    bottom: -100%;
+    right: -100%;
+}
+  
+.support-btn:hover span:nth-child(4) {
+    bottom: 0;
+    right: 0;
+}
+/* .more-btn{
     text-decoration: none;
     padding: 5px 20px;
     border: 2px solid red;
@@ -736,17 +978,24 @@ a {
     background-color: var(--header-color);
     color: #fff;
 }
-/* @media screen and (max-width: 575px) {
-    .support_content P{
-        font-size: 25px;
-    }
-    .more-btn{
-        
+@media screen and (max-width: 1150px) {
+    .support_btn a{
         font-size: 15px;
     }
     
 } */
-
+@media screen and (max-width: 991px) {
+    #support{
+        margin-top: 100px;
+    }
+    
+}
+@media screen and (max-width: 1200px) {
+    a.support-btn{
+        font-size: 0.9rem;
+    }
+    
+}
 /* support end */
 
 
@@ -756,7 +1005,7 @@ a {
 
 #students-comment {
     padding: 100px 0;
-    padding-bottom: 100px;
+    padding-bottom: 60px;
   }
   
   .industrial-students-comment h1 {
@@ -914,7 +1163,7 @@ a {
     text-align: justify;
     word-spacing: 5px;
 }
-.more-course-card-ditails button{
+/* .more-course-card-ditails button{
     padding: 7px 20px;
     margin-top: 20px;
     font-size: 17px;
@@ -927,7 +1176,86 @@ a {
 .more-course-card-ditails button svg{
     width: 15px;
     height: 15px;
+} */
+a.more-btn {
+    position: relative;
+    padding: 8px 35px;
+    text-align: center;
+    border: 2px solid #dd0000;
+    text-decoration: none;
+    font-family: var(--header-font);
+    color: #dd0000;
+    font-weight: 700;
+    font-size: 1.1em;
+    z-index: 10;
+    transition: 0.5s;
+    overflow: hidden;
+    border-radius: 30px;
+    display: inline-block;
 }
+.more-btn svg{
+    margin-left: 20px;
+}
+.more-btn:hover {
+    color: #fff;
+}
+.more-btn svg path{
+    fill: #dd0000;
+    
+}
+.more-btn:hover svg path{
+    fill: #e7e7e7;
+}
+  
+.more-btn span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #dd0000;
+    transition: 0.4s;
+    z-index: -1;
+    opacity: 0.3;
+}
+  
+  .more-btn span:nth-child(1) {
+    top: -100%;
+    left: -100%;
+  }
+  
+  .more-btn:hover span:nth-child(1) {
+    top: 0;
+    left: 0;
+  }
+  
+  .more-btn span:nth-child(2) {
+    bottom: -100%;
+    left: -100%;
+  }
+  
+  .more-btn:hover span:nth-child(2) {
+    bottom: 0;
+    left: 0;
+  }
+  
+  .more-btn span:nth-child(3) {
+    top: -100%;
+    right: -100%;
+  }
+  
+  .more-btn:hover span:nth-child(3) {
+    top: 0;
+    right: 0;
+  }
+  
+  .more-btn span:nth-child(4) {
+    bottom: -100%;
+    right: -100%;
+  }
+  
+  .more-btn:hover span:nth-child(4) {
+    bottom: 0;
+    right: 0;
+  }
 @media screen and (max-width: 575px) {
     .more-course-heading h2{
         font-size: 30px;
